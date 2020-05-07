@@ -1,9 +1,10 @@
+//when ready, replace password with Dan's database password and update the name of the database
 
 {
     "development": {
       "username": "root",
       "password": null,
-      "database": "blogger",
+      "database": "add name here",
       "host": "127.0.0.1",
       "port": 3306,
       "dialect": "mysql"
