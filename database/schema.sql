@@ -1,7 +1,7 @@
--- Drops the animals_db if it exists currently --
+-- Drops the product_db if it exists currently --
 DROP DATABASE IF EXISTS `product_db`;
 
--- Creates the "animals_db" database --
+-- Creates the "product_db" database --
 CREATE DATABASE `product_db`;
 
 
@@ -42,8 +42,13 @@ CREATE TABLE profile_table (
 );
 
 -- Creates new rows containing data in all named columns PRODUCTS --
+
+INSERT INTO product (brand_name, labeler_name, marketing_start_date, product_id, price)
+VALUES ("GINGI-PAK MAX SOFT-TWIST NO 1",  "Gingi-Pak a Division of the Belport", "19870626", "10129-001_7d855c49-3fb3-0059-e053-2a91aa0a40df", "$25.99");
+
 INSERT INTO product (brand_name, labeler_name, marketing_start_date, product_id)
 VALUES ("GINGI-PAK MAX SOFT-TWIST NO 1",  "Gingi-Pak a Division of the Belport", "19870626", "10129-001_7d855c49-3fb3-0059-e053-2a91aa0a40df");
+
 
 -- Creates new rows containing data in all named columns PROFILE TABLE --
 
@@ -60,6 +65,17 @@ VALUES ("Dmitri", "Wilson st", "ON", "222 222");
 SELECT * FROM product;
 SELECT * FROM profile_table;
 -- Updates the row where the column IS PRODUCT & PROFILE_TABLE--
+
+-- UPDATE--
+-- SET--
+-- WHERE--
+
+-- show ALL product with profile_table--
+-- INNER JOIN will only return all matching values from both tables--
+-- SELECT first_name, brand_name--
+-- FROM product--
+-- INNER JOIN profile_table ON product.profile_table = profile_table.id;--
+
 -- UPDATE 
 -- SET 
 -- WHERE
@@ -69,3 +85,4 @@ SELECT * FROM profile_table;
 SELECT first_name, brand_name
 FROM product
 INNER JOIN profile_table ON product.profile_table = profile_table.id;
+
