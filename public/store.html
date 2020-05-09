@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Store</title>
+  <script src="https://code.jquery.com/jquery.js"></script>
   <link rel="stylesheet" href="assets/css/style.css" media="screen" title="no title">
   <link rel="stylesheet" href="assets/css/footer.css" media="screen" title="no title">
   <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
@@ -56,33 +57,51 @@
       <h2>Our Newest Products</h2>
       <hr>
     </div>
+    <div class="row">
+      <div class="col-lg-12">
+  
+          <label for="reserve-unique-id"
+          >Route</label
+        >
+      
+          <select
+          name="field_12"
+          type="text"
+          class="form-control"
+          id="route"
+          required
+        ></select>
+      
+        <label for="reserve-unique-id"
+        >Dosage Form</label
+      >
+      
+        <select
+        name="field_12"
+        type="text"
+        class="form-control"
+        id="dosageForm"
+        required
+      ></select>
+      
+        <br>
+        <button type="submit" id="checkName" class="button btn-primary submit">
+          Check
+        </button>
+      
+          
+  
+  
+      </div>
+  
+  
+  </div>
+
+
    
 
-    <div class="row small-up-2 large-up-4">
-      <div class="column">
-        <img class="thumbnail" src="https://placehold.it/300x400">
-        <h5>Nulla At Nulla Justo, Eget</h5>
-        <p>$400</p>
-        <a href="#" class="button expanded">Buy</a>
-      </div>
-      <div class="column">
-        <img class="thumbnail" src="https://placehold.it/300x400">
-        <h5>Nulla At Nulla Justo, Eget</h5>
-        <p>$400</p>
-        <a href="#" class="button expanded">Buy</a>
-      </div>
-      <div class="column">
-        <img class="thumbnail" src="https://placehold.it/300x400">
-        <h5>Nulla At Nulla Justo, Eget</h5>
-        <p>$400</p>
-        <a href="#" class="button expanded">Buy</a>
-      </div>
-      <div class="column">
-        <img class="thumbnail" src="https://placehold.it/300x400">
-        <h5>Nulla At Nulla Justo, Eget</h5>
-        <p>$400</p>
-        <a href="#" class="button expanded">Buy</a>
-      </div>
+    <div class="row small-up-2 large-up-4" id="drugList">
+    
     </div>
 
     <hr>
@@ -100,160 +119,13 @@
       <hr>
     </div>
 
-    <div class="row small-up-2 medium-up-3 large-up-6">
-      <div class="column">
-        <img class="thumbnail" src="https://placehold.it/300x400">
-        <h5>Nulla At Nulla Justo, Eget</h5>
-        <p>$400</p>
-        <a href="#" class="button small expanded hollow">Buy</a>
-      </div>
-      <div class="column">
-        <img class="thumbnail" src="https://placehold.it/300x400">
-        <h5>Nulla At Nulla Justo, Eget</h5>
-        <p>$400</p>
-        <a href="#" class="button small expanded hollow">Buy</a>
-      </div>
-      <div class="column">
-        <img class="thumbnail" src="https://placehold.it/300x400">
-        <h5>Nulla At Nulla Justo, Eget</h5>
-        <p>$400</p>
-        <a href="#" class="button small expanded hollow">Buy</a>
-      </div>
-      <div class="column">
-        <img class="thumbnail" src="https://placehold.it/300x400">
-        <h5>Nulla At Nulla Justo, Eget</h5>
-        <p>$400</p>
-        <a href="#" class="button small expanded hollow">Buy</a>
-      </div>
-      <div class="column">
-        <img class="thumbnail" src="https://placehold.it/300x400">
-        <h5>Nulla At Nulla Justo, Eget</h5>
-        <p>$400</p>
-        <a href="#" class="button small expanded hollow">Buy</a>
-      </div>
-      <div class="column">
-        <img class="thumbnail" src="https://placehold.it/300x400">
-        <h5>Nulla At Nulla Justo, Eget</h5>
-        <p>$400</p>
-        <a href="#" class="button small expanded hollow">Buy</a>
-      </div>
-    </div>
-
-    <hr>
-    <div class="row">
-      <div class="medium-4 columns">
-        <h4>Top Products</h4>
-        <div class="media-object">
-          <div class="media-object-section">
-            <img class="thumbnail" src="https://placehold.it/100x100">
-          </div>
-          <div class="media-object-section">
-            <h5>Nunc Eu Ullamcorper Orci</h5>
-            <p>Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque.</p>
-          </div>
-        </div>
-        <div class="media-object">
-          <div class="media-object-section">
-            <img class="thumbnail" src="https://placehold.it/100x100">
-          </div>
-          <div class="media-object-section">
-            <h5>Nunc Eu Ullamcorper Orci</h5>
-            <p>Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque.</p>
-          </div>
-        </div>
-        <div class="media-object">
-          <div class="media-object-section">
-            <img class="thumbnail" src="https://placehold.it/100x100">
-          </div>
-          <div class="media-object-section">
-            <h5>Nunc Eu Ullamcorper Orci</h5>
-            <p>Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque.</p>
-          </div>
-        </div>
-      </div>
-      <div class="medium-4 columns">
-        <h4>Top Products</h4>
-        <div class="media-object">
-          <div class="media-object-section">
-            <img class="thumbnail" src="https://placehold.it/100x100">
-          </div>
-          <div class="media-object-section">
-            <h5>Nunc Eu Ullamcorper Orci</h5>
-            <p>Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque.</p>
-          </div>
-        </div>
-        <div class="media-object">
-          <div class="media-object-section">
-            <img class="thumbnail" src="https://placehold.it/100x100">
-          </div>
-          <div class="media-object-section">
-            <h5>Nunc Eu Ullamcorper Orci</h5>
-            <p>Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque.</p>
-          </div>
-        </div>
-        <div class="media-object">
-          <div class="media-object-section">
-            <img class="thumbnail" src="https://placehold.it/100x100">
-          </div>
-          <div class="media-object-section">
-            <h5>Nunc Eu Ullamcorper Orci</h5>
-            <p>Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque.</p>
-          </div>
-        </div>
-      </div>
-      <div class="medium-4 columns">
-        <h4>Top Products</h4>
-        <div class="media-object">
-          <div class="media-object-section">
-            <img class="thumbnail" src="https://placehold.it/100x100">
-          </div>
-          <div class="media-object-section">
-            <h5>Nunc Eu Ullamcorper Orci</h5>
-            <p>Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque.</p>
-          </div>
-        </div>
-        <div class="media-object">
-          <div class="media-object-section">
-            <img class="thumbnail" src="https://placehold.it/100x100">
-          </div>
-          <div class="media-object-section">
-            <h5>Nunc Eu Ullamcorper Orci</h5>
-            <p>Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque.</p>
-          </div>
-        </div>
-        <div class="media-object">
-          <div class="media-object-section">
-            <img class="thumbnail" src="https://placehold.it/100x100">
-          </div>
-          <div class="media-object-section">
-            <h5>Nunc Eu Ullamcorper Orci</h5>
-            <p>Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-   
-    <div class="footer">
-        <div class="footer__addr">
-            <h1 class="footer__logo">The Pharmacy</h1>
-            <h2>Contact</h2>
-            <address>
-                1234 in Toronto<br>
-            <a class="footer__btn" href="dianakago2@gmail.com">Email Us</a>
-              </address>
-        </div>
-            <div class="legal">
-              <p>&copy; 2020 Something. All rights reserved.</p>
-              <div class="legal__links">
-                <span>Made with <span class="heart">:hearts:</span> for you.</span>
-              </div>
-            </div>
-    </footer>
+  
    
 <script>
     console.log("hello")
     var getRoutes = 'https://api.fda.gov/drug/ndc.json?count=route';
     var getDosageForm = 'https://api.fda.gov/drug/ndc.json?count=dosage_form';
+    var drugArray =[]
 
     getRoutesFunction()
     getDosageFormFunction()
@@ -268,19 +140,69 @@
     getDrugList(route, dosageForm);
     });
 
+    $("#drugList").on("click", function (e) {
+        e.preventDefault();
+        console.log("clicked buydrug")
+        console.log(e.target.id)
+        console.log(drugArray)
+
+        var newDrugSave={
+
+          user: "Dmitri",
+          brand_name: drugArray.results[e.target.id].brand_name,
+          labeler_name: drugArray.results[e.target.id].labeler_name,
+          marketing_start_date: drugArray.results[e.target.id].marketing_start_date,
+          product_id: drugArray.results[e.target.id].spl_id,
+          price: "400"
+
+        }
+
+        console.log(newDrugSave);
+
+        $.post("/api/posts", newDrugSave,
+      function(data) {
+
+       
+        if (data) {
+          alert("Thank you, Drug Submitted");
+          location.reload();
+
+        }
+
+        
+        else {
+          alert("Something went wrong ...");
+         
+        }
+      });
+
+
+  
+    });
+
     function getDrugList(route, dosageForm){
 
     var base = 'https://api.fda.gov/drug/ndc.json?count=';
-    var uri = `https://api.fda.gov/drug/ndc.json?search=route:${route}+AND+dosage_form=${dosageForm}&limit=10`;
+    var uri = `https://api.fda.gov/drug/ndc.json?search=route:${route}+AND+dosage_form=${dosageForm}&limit=12`;
 
     $.ajax({
         url: uri,
         method: "GET"
       }).then(function(response){
         console.log(response)
+        drugArray =response;
     
     for (let index = 0; index < response.results.length; index++) {
-            $("#responses").append(`<h1>${response.results[index].brand_name}</h1><br><p>${response.results[index].labeler_name}</p>`);
+            $("#drugList").append(`
+            <div class="column">
+        <img class="thumbnail" src="https://picsum.photos/300/400?random=${index}">
+        <h5>${response.results[index].brand_name}</h5>
+        <p>${response.results[index].labeler_name}</p>
+        <p>$400</p>
+        <a href="#" class="button expanded buyDrug" id="${index}">Buy</a>
+      </div>
+            
+    `);
         } 
     })
     };
