@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css" media="screen" title="no title">
-    <link rel="stylesheet" href="css/footer.css" media="screen" title="no title">
+    <title>Profile</title>
+    <link rel="stylesheet" href="assets/css/style.css" media="screen" title="no title">
+    <link rel="stylesheet" href="assets/css/footer.css" media="screen" title="no title">
     <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
     <!-- <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous"> -->
@@ -31,8 +31,17 @@
                             <a class="nav-item nav-link" href="profile.html">Profile</a>
                         </li>
                         <li>
-                            <a class="nav-item nav-link" href="store.html">Store</a>
-                        </li>
+                            <div class="dropdown">
+                                <!-- <button class="dropbtn">Store  -->
+                                  <i class="fa fa-caret-down"><a class="nav-item nav-link" href="store.html">Store</a></i>
+                                </button>
+                                <div class="dropdown-content">
+                                  <a href="#">Link 1</a>
+                                  <a href="#">Link 2</a>
+                                  <a href="#">Link 3</a>
+                                </div>
+                            </div> 
+                        </li>  
                         <li>
                             <a class="nav-item nav-link" href="checkout.html">Check out</a>
                         </li>                    
@@ -40,7 +49,29 @@
                 </div> 
             </div>     
         </div>
-        </div>
+    </div>
+
+    <div class="card">     
+            <img class="card_image" src="assets/images/GTKY+Logo.jpg"/>    
+    </div>    
+
+    <div class="contaner">
+        <br>
+        <h3>
+            Do you have an account,please login. 
+        </h3>
+
+            <div class="form">
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname"><br><br>
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname"><br><br>
+                <input class="submit" onclick="window.location.href='store.html' "type="button" value="submit"/>                
+                <input class="Create an account" onclick="window.location.href='createacct.html' "type="button" value="Create an account"/>    
+    </div>
+
+   <br>
+   <br>   
     
     <div class="footer">
         <div class="footer__addr">

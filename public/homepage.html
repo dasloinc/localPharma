@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Homepage</title>
     <link rel="stylesheet" href="assets/css/style.css" media="screen" title="no title">
     <link rel="stylesheet" href="assets/css/footer.css" media="screen" title="no title">
     <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
@@ -13,7 +13,7 @@
     
 </head>
 <body>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <class class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     
     <div class="contaner">
         <div class="top-bar">
@@ -31,8 +31,17 @@
                         <a class="nav-item nav-link" href="profile.html">Profile</a>
                     </li>
                     <li>
-                        <a class="nav-item nav-link" href="store.html">Store</a>
-                    </li>
+                        <div class="dropdown">
+                            <!-- <button class="dropbtn">Store  -->
+                              <i class="fa fa-caret-down"><a class="nav-item nav-link" href="store.html">Store</a></i>
+                            </button>
+                            <div class="dropdown-content">
+                              <a href="#">Link 1</a>
+                              <a href="#">Link 2</a>
+                              <a href="#">Link 3</a>
+                            </div>
+                        </div> 
+                    </li>  
                     <li>
                         <a class="nav-item nav-link" href="checkout.html">Check out</a>
                     </li>                    
@@ -40,26 +49,20 @@
             </div> 
         </div>     
     </div>
-    </div>
+    </class>
 
     <div class="card">
         
         <div class="mySlides fade">
-            <div class="numbertext">1 / 3</div>
             <img class="card_image" src="assets/images/eyesite-woman-trying-on-glasses-in-branch_642065719.jpg"/>
-            <div class="text">Lady trying on glases</div>
         </div>
         
         <div class="mySlides fade">
-            <div class="numbertext">2 / 3</div>
             <img class="card_image" src="assets/images/gummies-module-600x400-min.jpg"/>
-            <div class="text">Vitamins</div>
         </div>  
 
         <div class="mySlides fade">
-            <div class="numbertext">3 / 3</div>
             <img class="card_image" src="assets/images/sexual wellness.jpeg"/>
-            <div class="text">Products lines up</div>
         </div>
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -71,14 +74,29 @@
             <span class="dot" onclick="currentSlide(3)"></span> 
         </div>
     </div>
-    
-
-
-
-
-
-
-
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">  
+                <p1><strong>We also offer</strong></p1>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="conainer">
+    <div class="row small-up-2 large-up-4">
+        <div class="column">
+            <img src="assets/images/onlinerefill.jpeg"/>
+        </div>
+        <div class="column">
+            <img src="assets/images/clinic-vaccination.png" alt="vaccines">
+        </div>
+        <div class="column">
+            <img src="assets/images/consulting.jpeg" alt="vaccines">
+      </div>
+    </div>
+      
+  
 <div class="footer">
     <div class="footer__addr">
         <h1 class="footer__logo">The Pharmacy</h1>
