@@ -13,9 +13,9 @@ const router = require('express').Router();
   // Each of the below routes just handles the HTML page that the user gets sent to.
 
   // homepage route loads homepage.html
-  router.get("/homepage", function(req, res) {
+  router.get("/creteacct", function(req, res) {
     console.log(__dirname)
-    res.sendFile(path.join(__dirname, "../public/homepage.html"));
+    res.sendFile(path.join(__dirname, "../public/createacct.html"));
   });
 
   // profile route loads profile.html
@@ -38,7 +38,7 @@ const router = require('express').Router();
 
   router.get("*", function(req, res) {
     console.log(__dirname)
-  res.sendFile(path.join(__dirname, "../public/index.html"));
+  res.sendFile(path.join(__dirname, "../public/homepage.html"));
 });
 
 module.exports = router;
