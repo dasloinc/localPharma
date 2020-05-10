@@ -12,8 +12,8 @@ const router = require('express').Router();
 
   // Each of the below routes just handles the HTML page that the user gets sent to.
 
-  // homepage route loads homepage.html
-  router.get("/creteacct", function(req, res) {
+  // create account route loads createacct.html
+  router.get("/createacct", function(req, res) {
     console.log(__dirname)
     res.sendFile(path.join(__dirname, "../public/createacct.html"));
   });
@@ -34,7 +34,6 @@ const router = require('express').Router();
     console.log(__dirname)
     res.sendFile(path.join(__dirname, "../public/checkout.html"));
   });
-
 
   router.get("*", function(req, res) {
     console.log(__dirname)
