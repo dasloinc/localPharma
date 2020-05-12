@@ -1,8 +1,7 @@
-$(document).ready(function () {
 
-
-
-// Make a request for a user with a given ID
+  console.log("hello")
+  
+  
   axios.get('http://localhost:8080/api/products')
   .then(function (response) {
     // handle success
@@ -24,4 +23,4 @@ $(document).ready(function () {
   //     console.log(row);
   //   }
   // });
-})
+//})
