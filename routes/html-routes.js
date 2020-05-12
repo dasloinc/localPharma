@@ -4,7 +4,6 @@ var path = require("path");
 
 module.exports = function(app) {
 
-<<<<<<< HEAD
   // create account route loads createacct.html
   router.get("/", function(req, res) {
     console.log(__dirname)
@@ -14,11 +13,6 @@ module.exports = function(app) {
   router.get("/createacct", function(req, res) {
     console.log(__dirname)
     res.sendFile(path.join(__dirname, "../public/createacct.html"));
-=======
- 
-  app.get("/", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/homepage.html"));
->>>>>>> ec533c8288a792d80375f101478c9bfaeb988fa7
   });
 
   app.get("/createacct", function(req, res) {

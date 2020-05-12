@@ -12,7 +12,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-<<<<<<< HEAD
     "cli": "^1.0.1",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
@@ -24,10 +23,5 @@
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.19.1"
-=======
-    "express": "^4.16.3",
-    "mysql2": "^1.6.4",
-    "sequelize": "^4.41.2"
->>>>>>> ec533c8288a792d80375f101478c9bfaeb988fa7
   }
 }
