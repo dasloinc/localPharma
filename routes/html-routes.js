@@ -1,17 +1,10 @@
-// *********************************************************************************
-// html-routes.js - this file offers a set of routes for sending users to the various html pages
-// *********************************************************************************
 
-// Dependencies
-// =============================================================
 var path = require("path");
-const router = require('express').Router();
 
-// Routes
-// =============================================================
 
-  // Each of the below routes just handles the HTML page that the user gets sent to.
+module.exports = function(app) {
 
+<<<<<<< HEAD
   // create account route loads createacct.html
   router.get("/", function(req, res) {
     console.log(__dirname)
@@ -21,28 +14,24 @@ const router = require('express').Router();
   router.get("/createacct", function(req, res) {
     console.log(__dirname)
     res.sendFile(path.join(__dirname, "../public/createacct.html"));
+=======
+ 
+  app.get("/", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/homepage.html"));
+>>>>>>> ec533c8288a792d80375f101478c9bfaeb988fa7
   });
 
-  // profile route loads profile.html
-  router.get("/products", function(req, res) {
-    console.log(__dirname)
+  app.get("/createacct", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/createacct.html"));
+  });
+  app.get("/profile", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/profile.html"));
   });
-  
-  // store route loads store.html
-  router.get("/store", function(req, res) {
+  app.get("/store", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/store.html"));
   });
-
-  // checkout route loads checkout.html
-  router.get("/checkout", function(req, res) {
-    console.log(__dirname)
+  app.get("/checkout", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/checkout.html"));
   });
 
-  router.get("*", function(req, res) {
-    console.log(__dirname)
-  res.sendFile(path.join(__dirname, "../public/homepage.html"));
-});
-
-module.exports = router;
+};

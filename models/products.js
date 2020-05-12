@@ -1,17 +1,47 @@
 module.exports = function(sequelize, DataTypes) {
-    var Product = sequelize.define("Product", {
-      // Giving the Author model a name of type STRING
-      name: DataTypes.STRING
-    });
-  
-    Product.associate = function(models) {
-      // Associating Product with Posts
-      // When an Product is deleted, also delete any associated Posts
-      Product.hasMany(models.Post, {
-        onDelete: "cascade"
-      });
-    };
-  
-    return Product;
-  };
-  
+  var product = sequelize.define("product", {
+    brand_name: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        len: [1]
+      }
+    },
+    labeler_name: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        len: [1]
+      }
+    },
+    marketing_start_date: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        len: [1]
+      }
+    },
+    product_id: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        len: [1]
+      }
+    },
+    price: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        len: [1]
+      }
+    },
+    user: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        len: [1]
+      }
+    }
+  });
+  return product;
+};

@@ -1,25 +1,25 @@
 {
   "development": {
-    "username": "root",
-    "password": "Dani226879!",
-    "database": "blogger",
-    "host": "127.0.0.1",
+    "username": "newuser",
+    "password": "eblan1",
+    "database": "product_db_development",
+    "host": "CANMISBOUILOD19",
     "port": 3306,
     "dialect": "mysql"
   },
   "test": {
-    "username": "root",
-    "password": null,
-    "database": "database_test",
-    "host": "127.0.0.1",
+    "username": "newuser",
+    "password": "eblan1",
+    "database": "product_db_test",
+    "host": "CANMISBOUILOD19",
     "port": 3306,
     "dialect": "mysql"
   },
   "production": {
-    "username": "root",
-    "password": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
+    "username": "newuser",
+    "password": "eblan1",
+    "database": "product_db",
+    "host": "CANMISBOUILOD19",
     "port": 3306,
     "dialect": "mysql"
   }
