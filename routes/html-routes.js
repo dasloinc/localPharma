@@ -13,6 +13,11 @@ const router = require('express').Router();
   // Each of the below routes just handles the HTML page that the user gets sent to.
 
   // create account route loads createacct.html
+  router.get("/", function(req, res) {
+    console.log(__dirname)
+    res.sendFile(path.join(__dirname, "public/index.html"));
+  });
+
   router.get("/createacct", function(req, res) {
     console.log(__dirname)
     res.sendFile(path.join(__dirname, "../public/createacct.html"));
