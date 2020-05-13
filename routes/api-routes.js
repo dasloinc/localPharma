@@ -18,6 +18,16 @@ module.exports = function(app) {
       });
   });
 
+ app.get("/api/products", function(req,res){
+    db.product.findAll({ 
+
+    })
+    .then(function(dbAllProducts) {
+      console.log(res.body)
+      res.json(dbAllProducts);
+
+    });  
+  })
  
   app.post("/api/saveDrug", function(req, res) {
     
