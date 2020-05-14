@@ -13,5 +13,5 @@ CREATE DATABASE product_db_test;
 
 -- create user for product_db_test DB
 create user 'newuser'@'localhost' IDENTIFIED WITH mysql_native_password BY 'eblan1';
-GRANT ALL ON product_db_test.* TO 'newuser'@'localhost';
+GRANT ALL ON product_db_development.* TO 'newuser'@'localhost';
 
