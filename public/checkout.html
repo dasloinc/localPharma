@@ -4,153 +4,159 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery.js"></script>
     <link rel="stylesheet" href="assets/css/style.css" media="screen" title="no title">
     <link rel="stylesheet" href="assets/css/footer.css" media="screen" title="no title">
     <link rel="stylesheet" href="assets/css/checkout.css" media="screen" title="no title">
     <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css"
+          integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://use.fontawesome.com/0705e821ba.js"></script>
     <title>Checkout</title>
-    
+
 </head>
 <body>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    
-        <div class="contaner">
-            <div class="top-bar">
-                <div class="top-bar-left">
-                    <ul class="menu1">
-                        <li class="menu-text">The Pharmacy</li>
-                    </ul>
-                </div>
-                <div class="top-bar-right">
-                    <ul class="menu">
-                        <li>
-                            <a class="nav-item nav-link active" href="homepage.html">Home</a>
-                        </li>
-                        <li>
-                            <a class="nav-item nav-link" href="profile.html">Profile</a>
-                        </li>
-                        <li>
-                            <div class="dropdown">
-                                <!-- <button class="dropbtn">Store  -->
-                                  <i class="fa fa-caret-down"><a class="nav-item nav-link" href="store.html">Store</a></i>
-                                </button>
-                                <div class="dropdown-content">
-                                  <a href="#">Link 1</a>
-                                  <a href="#">Link 2</a>
-                                  <a href="#">Link 3</a>
-                                </div>
-                            </div> 
-                        </li>  
-                        <li>
-                            <a class="nav-item nav-link" href="checkout.html">Check out</a>
-                        </li>                    
-                    </ul>
-                </div>     
+<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+
+    <div class="contaner">
+        <div class="top-bar">
+            <div class="top-bar-left">
+                <ul class="menu1">
+                    <li class="menu-text">The Pharmacy</li>
+                </ul>
             </div>
-        </div>
-
-        <div class="row">
-            <div class="col-75">
-                <div class="container">
-                    <form action="/action_page.php">
-                        <div class="row">
-                            <div class="col-58">
-                                <h3>Billing Address</h3>
-                <label for="fname"><i class="fa fa-user"></i>Full Name</label> 
-                <input type="text" id="fname" name="firstname" placeholder="John Doe">
-
-                <label for="email"><i class="fa fa-envelope"></i>Email</label> 
-                <input type="text" id="email" name="email" placeholder="John@gmail.com">
-
-                <label for="adr"><i class="fa fa-address-caed-o"></i>Address</label> 
-                <input type="text" id="adr name="Address" placeholder="214 bloor street">
-
-                <label for="fname"><i class="fa fa-user"></i>City</label> 
-                <input type="text" id="city" name="city" placeholder="Toronto">
-            <div>
-                <div class="col=50">
-                    <label for="state">State</label>
-                    <input type="text" id="state" name="state" placeholder="ON">
-                </div>
-                <div class="col=50">
-                    <label for="state">Zip</label>
-                    <input type="text" id="zip" name="state" placeholder="10001">
-                </div>
-            </div>   
-         </div>
-                        
-        <div class="col-50">
-                <h3>Payment</h3>
-                <label for="fname">Accepted Card</label>
-                <div class="icon-container">
-                    <i class="fa fa-cc-visa" style="color:navy;"></i>
-                    <i class="fa fa-cc-amex" style="color:blue;"></i>
-                    <i class="fa fa-cc-mastercard" style="color:red;"></i>
-                    <i class="fa fa-cc-discover" style="color:orange;"></i>
-                </div>
-                <label for="cname">Name on Card</label>
-                <input type="text" id="cname" name="cardnumber" placeholder="John Doe">
-
-                <label for="cname">Credit Card</label>
-                <input type="text" id="ccnum" name="cardnumber" placeholder="1111-1111-1111-1111">
-
-                <label for="cname">Exp Month</label>
-                <input type="text" id="expmonth" name="expmonth" placeholder="May">
-                <div class="row">
-                    <div class="col-50">
-                        <label for="expyear">Exp Year</label>
-                        <input type="text" id="expyear" name="expyear" placeholder="2020">   
-                    </div>
-                    <div class="col-50">
-                        <label for="cvv">CVV</label>
-                        <input type="text" id="cvv" name="cvv" placeholder="532">
-                    </div>
-            </div>
-        </div>  
+            <div class="top-bar-right">
+                <ul class="menu">
+                    <li>
+                        <a class="nav-item nav-link active" href="homepage.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="nav-item nav-link" href="profile.html">Profile</a>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <!-- <button class="dropbtn">Store  -->
+                            <i class="fa fa-caret-down"><a class="nav-item nav-link" href="store.html">Store</a></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                            </div>
                         </div>
-                        
-         <label>
-         <input type="checkbox" checked="checked" name="sameadr">Shipping address same as billing</label>
-         <input type="submit" value="continue To checkbox" class="btn">
-                            
-                    </form>
-                </div>
-            </div>      
-            <div class="col-25">
-                <div class="container">
-                    <h4>Card<span class="price" style="color:black"><i class="fa fa-shopping-cart"></i><b>4</b></span></h4>
-                    <p><a href="#">Vitamins</a><span class="price">$10</span></p>
-                    <p><a href="#">Eye drops</a><span class="price">$30</span></p>
-                    <p><a href="#">tooth paste</a><span class="price">$5</span></p>
-                    <p><a href="#">calcium</a><span class="price">$20</span></p>
-                    <hr>
-                    <p>Total<span class="price" style="color: black"><b>$65</b></span></p>
-                </div>
+                    </li>
+                    <li>
+                        <a class="nav-item nav-link" href="checkout.html">Check out</a>
+                    </li>
+                </ul>
             </div>
         </div>
-    
+    </div>
+
+    <div class="row">
+        <div class="col-75">
+            <div class="container">
+                <form action="/action_page.php">
+                    <div class="row">
+                        <div class="col-58">
+                            <h3>Billing Address</h3>
+                            <label for="fname"><i class="fa fa-user"></i>Full Name</label>
+                            <input type="text" id="fname" name="firstname" placeholder="John Doe">
+
+                            <label for="email"><i class="fa fa-envelope"></i>Email</label>
+                            <input type="text" id="email" name="email" placeholder="John@gmail.com">
+
+                            <label for="adr"><i class="fa fa-address-caed-o"></i>Address</label>
+                            <input type="text" id="adr" name="Address" placeholder="214 bloor street">
+
+                            <label for="fname"><i class="fa fa-user"></i>City</label>
+                            <input type="text" id="city" name="city" placeholder="Toronto">
+                            <div>
+                                <div class="col=50">
+                                    <label for="state">State</label>
+                                    <input type="text" id="state" name="state" placeholder="ON">
+                                </div>
+                                <div class="col=50">
+                                    <label for="state">Zip</label>
+                                    <input type="text" id="zip" name="state" placeholder="10001">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-50">
+                            <h3>Payment</h3>
+                            <label for="fname">Accepted Card</label>
+                            <div class="icon-container">
+                                <i class="fa fa-cc-visa" style="color:navy;"></i>
+                                <i class="fa fa-cc-amex" style="color:blue;"></i>
+                                <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                                <i class="fa fa-cc-discover" style="color:orange;"></i>
+                            </div>
+                            <label for="cname">Name on Card</label>
+                            <input type="text" id="cname" name="cardnumber" placeholder="John Doe">
+
+                            <label for="cname">Credit Card</label>
+                            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-1111-1111-1111">
+
+                            <label for="cname">Exp Month</label>
+                            <input type="text" id="expmonth" name="expmonth" placeholder="May">
+                            <div class="row">
+                                <div class="col-50">
+                                    <label for="expyear">Exp Year</label>
+                                    <input type="text" id="expyear" name="expyear" placeholder="2020">
+                                </div>
+                                <div class="col-50">
+                                    <label for="cvv">CVV</label>
+                                    <input type="text" id="cvv" name="cvv" placeholder="532">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <label>
+                        <input type="checkbox" checked="checked" name="sameadr">Shipping address same as billing</label>
+                    <input type="submit" value="continue To checkbox" class="btn">
+
+                </form>
+            </div>
+        </div>
+        <div class="col-25">
+            <div class="container">
+                <h4>Cart<span class="price" style="color:black"><i class="fa fa-shopping-cart"></i><b id="shopping_cart_items_count">0</b></span></h4>
+<!--                <p><a href="#">Vitamins</a><span class="price">$10</span></p>-->
+<!--                <p><a href="#">Eye drops</a><span class="price">$30</span></p>-->
+<!--                <p><a href="#">tooth paste</a><span class="price">$5</span></p>-->
+<!--                <p><a href="#">calcium</a><span class="price">$20</span></p>-->
+                <div id="shopping_cart_items"></div>
+                <hr>
+                <p>Total<span class="price" style="color: black"><b id="shopping_cart_total">$0</b></span></p>
+            </div>
+        </div>
+    </div>
+
     <div class="footer">
         <div class="footer__addr">
             <h1 class="footer__logo">The Pharmacy</h1>
             <h2>Contact</h2>
             <address>
                 1234 in Toronto<br>
-            <a class="footer__btn" href="dianakago2@gmail.com">Email Us</a>
-              </address>
+                <a class="footer__btn" href="dianakago2@gmail.com">Email Us</a>
+            </address>
         </div>
-            <div class="legal">
-              <p>&copy; 2020 Something. All rights reserved.</p>
-              <div class="legal__links">
+        <div class="legal">
+            <p>&copy; 2020 Something. All rights reserved.</p>
+            <div class="legal__links">
                 <span>Made with <span class="heart">:hearts:</span> for you.</span>
             </div>
         </div>
     </div>
-        
-    </footer>    
 
-    <!-- <script src="images.js"></script>  -->
+</div>
+
+<!-- <script src="images.js"></script>  -->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.js"></script>-->
+<script src="assets/js/checkout.js" type="text/javascript"></script>
+
 </body>
 </html>

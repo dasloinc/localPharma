@@ -11,7 +11,7 @@
     "username": "newuser",
     "password": "eblan1",
     "database": "product_db_test",
-    "host": "CANMISBOUILOD19",
+    "host": "localhost",
     "port": 3306,
     "dialect": "mysql"
   },
