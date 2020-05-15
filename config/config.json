@@ -7,14 +7,6 @@
     "port": 3306,
     "dialect": "mysql"
   },
-  "nikola-development": {
-    "username": "newuser",
-    "password": "eblan1",
-    "database": "product_db_development",
-    "host": "127.0.0.1",
-    "port": 3306,
-    "dialect": "mysql"
-  },
   "production": {
     "use_env_variable":"JAWSDB_URL",
     "dialect": "mysql"
