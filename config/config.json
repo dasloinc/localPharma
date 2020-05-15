@@ -1,9 +1,9 @@
 {
   "development": {
-    "username": "root",
-    "password": "Dani226879!",
-    "database": "product_db_development",
-    "host": "127.0.0.1",
+    "username": "g7bpj2lel9ss8fzw",
+    "password": "m6rl5ep5nhvn1m1y",
+    "database": "ax22la4t0o6kqb4x",
+    "host": "pqxt96p7ysz6rn1f.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "port": 3306,
     "dialect": "mysql"
   },
