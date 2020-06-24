@@ -1,6 +1,16 @@
 
 var db = require("../models");
 
+var nodemailer = require('nodemailer');
+
+var transporter = nodemailer.createTransport({
+  service: 'gmail',
+  auth: {
+    user: 'dmitrisnodemailer2@gmail.com',
+    pass: '%6uD/"ZbwdRA{m__'
+  }
+});
+
 
 module.exports = function(app) {
 
@@ -17,6 +27,9 @@ module.exports = function(app) {
         res.json(dbPost);
       });
   });
+
+  
+
 
  app.get("/api/products", function(req,res){
     db.product.findAll({ 
@@ -38,8 +51,11 @@ module.exports = function(app) {
       price: req.body.price,
       user: req.body.user,
       product_id: req.body.product_id,
+      email: req.body.email,
     })
       .then(function(dbsaveDrug) {
+
+        console.log(dbsaveDrug)
         res.json(dbsaveDrug);
       });
   });
@@ -50,9 +66,27 @@ module.exports = function(app) {
       first_name: req.body.first_name,
       address_name: req.body.address_name,
       province: req.body.province,
-      postal_code: req.body.postal_code
+      postal_code: req.body.postal_code,
+      email: req.body.email
        })
       .then(function(dbsaveAccount) {
+
+        var mailOptions = {
+          from: 'dmitrisnodemailer2@gmail.com',
+          to: dbsaveAccount.dataValues.email,
+          subject: `Welcome to Our Store ${dbsaveAccount.dataValues.first_name} !!!`,
+          text: `Enjoy Shopping!`
+        };
+        
+        transporter.sendMail(mailOptions, function(error, info){
+          if (error) {
+            console.log(error);
+          } else {
+            console.log('Email sent: ' + info.response);
+          }
+        });
+
+
         res.json(dbsaveAccount);
       });
   });
