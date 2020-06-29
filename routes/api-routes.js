@@ -3,6 +3,8 @@ var db = require("../models");
 
 var nodemailer = require('nodemailer');
 
+const Handlebars = require("handlebars");
+
 var transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
@@ -70,12 +72,17 @@ module.exports = function(app) {
       email: req.body.email
        })
       .then(function(dbsaveAccount) {
+      
+        // using handlebars engine to generate email text from template
+
+        const emailTextTemplate = Handlebars.compile("Dear valued customer {{firstName}} {{lastName}}, Thank you for spending time with us today and hope that you enjoy yourself!");
+        const emailText = emailTextTemplate({ firstName: req.body.first_name, lastName: req.body.last_name })
 
         var mailOptions = {
           from: 'dmitrisnodemailer2@gmail.com',
           to: dbsaveAccount.dataValues.email,
           subject: `Welcome to Our Store ${dbsaveAccount.dataValues.first_name} !!!`,
-          text: `Enjoy Shopping!`
+          text: emailText
         };
         
         transporter.sendMail(mailOptions, function(error, info){
