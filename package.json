@@ -16,6 +16,6 @@
     "mysql2": "^1.6.4",
     "nodemailer": "^6.4.10",
     "sequelize": "^4.41.2",
-    "handlebars": "4.7.6"
+    "handlebars": "4.7.7"
   }
 }
